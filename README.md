@@ -1,7 +1,7 @@
 # here-draw-front
 
 ## Commit Type
-``` swift
+```
 Feat: 새로운 기능 추가
 Fix: 버그 수정
 Docs: 문서 수정
@@ -13,6 +13,6 @@ Chore: 빌드 업무 수정, 패키지 매니저 수정 (생산성 코드 수정
 
 ## Commit Convention
 ### "Commit Type": [#이슈 번호] commit 메시지
-예시 - `Feat: [#10] 회원가입 기능 구현"
+예시 - `Feat: [#10] 회원가입 기능 구현`
 
 
