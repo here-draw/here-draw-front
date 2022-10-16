@@ -12,6 +12,10 @@
 		4F0A673A28F6714600E2DFBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A673928F6714600E2DFBA /* SceneDelegate.swift */; };
 		4F0A673C28F6714600E2DFBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A673B28F6714600E2DFBA /* ViewController.swift */; };
 		4F0A674128F6714700E2DFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F0A674028F6714700E2DFBA /* Assets.xcassets */; };
+		4F89175C28FBC297005A1B81 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F89175B28FBC297005A1B81 /* UIColor+Extension.swift */; };
+		4F89176028FBCC3E005A1B81 /* GmarketSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F89175E28FBCC3E005A1B81 /* GmarketSans-Bold.otf */; };
+		4F89176128FBCC3E005A1B81 /* GmarketSans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F89175F28FBCC3E005A1B81 /* GmarketSans-Medium.otf */; };
+		4F89176328FBCD3C005A1B81 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F89176228FBCD3C005A1B81 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		4F0A673B28F6714600E2DFBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F0A674028F6714700E2DFBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F0A674528F6714700E2DFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F89175B28FBC297005A1B81 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		4F89175E28FBCC3E005A1B81 /* GmarketSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GmarketSans-Bold.otf"; sourceTree = "<group>"; };
+		4F89175F28FBCC3E005A1B81 /* GmarketSans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GmarketSans-Medium.otf"; sourceTree = "<group>"; };
+		4F89176228FBCD3C005A1B81 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		9F2AF2563CF2B62C48D8433D /* Pods-here-draw-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.release.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A785D247F376F6FF223E4DCB /* Pods_here_draw_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_here_draw_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4D2F51B831DC63E7A7EB02 /* Pods-here-draw-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.debug.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +67,7 @@
 		4F0A673628F6714600E2DFBA /* here-draw-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4F89175A28FBC269005A1B81 /* Extension */,
 				4F89175728FACFB7005A1B81 /* Application */,
 				4F0A673B28F6714600E2DFBA /* ViewController.swift */,
 				4F89175828FAD30B005A1B81 /* Resource */,
@@ -79,6 +88,7 @@
 		4F89175828FAD30B005A1B81 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4F89175D28FBCC3E005A1B81 /* Font */,
 				4F0A674028F6714700E2DFBA /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -91,6 +101,25 @@
 			);
 			path = Support;
 			sourceTree = "<group>";
+		};
+		4F89175A28FBC269005A1B81 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4F89175B28FBC297005A1B81 /* UIColor+Extension.swift */,
+				4F89176228FBCD3C005A1B81 /* UIFont+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4F89175D28FBCC3E005A1B81 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4F89175E28FBCC3E005A1B81 /* GmarketSans-Bold.otf */,
+				4F89175F28FBCC3E005A1B81 /* GmarketSans-Medium.otf */,
+			);
+			name = Font;
+			path = "here-draw-ios/Resource/Font";
+			sourceTree = SOURCE_ROOT;
 		};
 		8FFD2449EBA1F1C25D444180 /* Pods */ = {
 			isa = PBXGroup;
@@ -169,7 +198,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F89176128FBCC3E005A1B81 /* GmarketSans-Medium.otf in Resources */,
 				4F0A674128F6714700E2DFBA /* Assets.xcassets in Resources */,
+				4F89176028FBCC3E005A1B81 /* GmarketSans-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +256,8 @@
 				4F0A673C28F6714600E2DFBA /* ViewController.swift in Sources */,
 				4F0A673828F6714600E2DFBA /* AppDelegate.swift in Sources */,
 				4F0A673A28F6714600E2DFBA /* SceneDelegate.swift in Sources */,
+				4F89176328FBCD3C005A1B81 /* UIFont+Extension.swift in Sources */,
+				4F89175C28FBC297005A1B81 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
