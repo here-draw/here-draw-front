@@ -1,0 +1,16 @@
+//
+//  Config.xcconfig
+//  here-draw-ios
+//
+//  Created by 박희지 on 2022/10/17.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.release.xcconfig"
+
+BASE_URL_DEV = https:/$()/dev.leesyum.shop
+BASE_URL_PROD = https:/$()/prod.leesyum.shop
+KAKAO_NATIVE_APP_KEY = 5b632e608fb5cf06561b95be00e3c16e

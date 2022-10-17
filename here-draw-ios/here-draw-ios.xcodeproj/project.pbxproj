@@ -16,6 +16,7 @@
 		4F89176028FBCC3E005A1B81 /* GmarketSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F89175E28FBCC3E005A1B81 /* GmarketSans-Bold.otf */; };
 		4F89176128FBCC3E005A1B81 /* GmarketSans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F89175F28FBCC3E005A1B81 /* GmarketSans-Medium.otf */; };
 		4F89176328FBCD3C005A1B81 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F89176228FBCD3C005A1B81 /* UIFont+Extension.swift */; };
+		4FF2A67128FD806800C236C1 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2A67028FD806800C236C1 /* NetworkUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		4F89175E28FBCC3E005A1B81 /* GmarketSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GmarketSans-Bold.otf"; sourceTree = "<group>"; };
 		4F89175F28FBCC3E005A1B81 /* GmarketSans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GmarketSans-Medium.otf"; sourceTree = "<group>"; };
 		4F89176228FBCD3C005A1B81 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		4FF2A66E28FD757C00C236C1 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		4FF2A67028FD806800C236C1 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		9F2AF2563CF2B62C48D8433D /* Pods-here-draw-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.release.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A785D247F376F6FF223E4DCB /* Pods_here_draw_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_here_draw_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4D2F51B831DC63E7A7EB02 /* Pods-here-draw-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.debug.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,9 +70,11 @@
 		4F0A673628F6714600E2DFBA /* here-draw-ios */ = {
 			isa = PBXGroup;
 			children = (
-				4F89175A28FBC269005A1B81 /* Extension */,
 				4F89175728FACFB7005A1B81 /* Application */,
-				4F0A673B28F6714600E2DFBA /* ViewController.swift */,
+				4F89175A28FBC269005A1B81 /* Extension */,
+				4FF2A67328FD82B200C236C1 /* Feature */,
+				4FF2A66F28FD803500C236C1 /* Network */,
+				4FF2A67228FD822400C236C1 /* Util */,
 				4F89175828FAD30B005A1B81 /* Resource */,
 				4F89175928FAD334005A1B81 /* Support */,
 			);
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				4F0A674528F6714700E2DFBA /* Info.plist */,
+				4FF2A66E28FD757C00C236C1 /* Config.xcconfig */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -120,6 +126,29 @@
 			name = Font;
 			path = "here-draw-ios/Resource/Font";
 			sourceTree = SOURCE_ROOT;
+		};
+		4FF2A66F28FD803500C236C1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4FF2A67228FD822400C236C1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4FF2A67028FD806800C236C1 /* NetworkUtils.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4FF2A67328FD82B200C236C1 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				4F0A673B28F6714600E2DFBA /* ViewController.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
 		};
 		8FFD2449EBA1F1C25D444180 /* Pods */ = {
 			isa = PBXGroup;
@@ -257,6 +286,7 @@
 				4F0A673828F6714600E2DFBA /* AppDelegate.swift in Sources */,
 				4F0A673A28F6714600E2DFBA /* SceneDelegate.swift in Sources */,
 				4F89176328FBCD3C005A1B81 /* UIFont+Extension.swift in Sources */,
+				4FF2A67128FD806800C236C1 /* NetworkUtils.swift in Sources */,
 				4F89175C28FBC297005A1B81 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +296,7 @@
 /* Begin XCBuildConfiguration section */
 		4F0A674628F6714700E2DFBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF2A66E28FD757C00C236C1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -326,6 +357,7 @@
 		};
 		4F0A674728F6714700E2DFBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF2A66E28FD757C00C236C1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -380,7 +412,7 @@
 		};
 		4F0A674928F6714700E2DFBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF4D2F51B831DC63E7A7EB02 /* Pods-here-draw-ios.debug.xcconfig */;
+			baseConfigurationReference = 4FF2A66E28FD757C00C236C1 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,6 +427,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -412,7 +445,7 @@
 		};
 		4F0A674A28F6714700E2DFBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F2AF2563CF2B62C48D8433D /* Pods-here-draw-ios.release.xcconfig */;
+			baseConfigurationReference = 4FF2A66E28FD757C00C236C1 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,6 +460,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
