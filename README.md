@@ -19,6 +19,9 @@
 
 ## Commit Convention
 ### "Commit Type": [#이슈 번호] commit 메시지
-예시 - `Feat: [#10] 회원가입 기능 구현`
+ex. `Feat: [#10] 회원가입 기능 구현`
 
+## Branch Convention
+### feature/#이슈 번호-작업명
+ex. `feature/#16-signIn`
 
