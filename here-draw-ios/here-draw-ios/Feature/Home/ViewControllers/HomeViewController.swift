@@ -114,28 +114,4 @@ class HomeViewController: BaseViewController {
 
 // MARK: - Extensions
 
-//MARK: - Preview
-
-#if canImport(SwiftUI) && DEBUG
-import SwiftUI
-
-struct ViewRepresentable: UIViewRepresentable{
-    typealias UIViewType = UIView
-    private let vc = HomeViewController()
     
-    func makeUIView(context: Context) -> UIView {
-        vc.view
-    }
-    
-    func updateUIView(_ uiView: UIView, context: Context) {
-        // 데이터 로드 필요할 때
-        // vc.tableView.reloadData()
-    }
-}
-
-struct ViewController_Previews: PreviewProvider{
-    static var previews: some View{
-        ViewRepresentable()
-    }
-}
-#endif
