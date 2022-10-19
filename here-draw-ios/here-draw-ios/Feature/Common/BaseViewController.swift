@@ -20,19 +20,28 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .black1
         hideNavigationBar()
+        hierarchy()
         setLayout()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
     }
     
     func setNavigationBar() {
         navigationController?.navigationBar.isHidden = false
-        navigationController?.navigationBar.backgroundColor = .black1
+        navigationController?.navigationBar.backgroundColor = .gray
         self.navigationItem.titleView?.isHidden = true
     }
     
     func hideNavigationBar() {
         navigationController?.navigationBar.isHidden = true
     }
+    
+    func hierarchy() {}
     
     func setLayout() {}
 }
