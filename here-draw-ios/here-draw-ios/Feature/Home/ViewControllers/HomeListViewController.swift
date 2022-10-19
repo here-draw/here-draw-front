@@ -1,17 +1,20 @@
 //
-//  HomeViewController.swift
+//  HomeListViewController.swift
 //  here-draw-ios
 //
-//  Created by 박희지 on 2022/10/18.
+//  Created by 박희지 on 2022/10/19.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeListViewController: UIViewController, PageComponentProtocol {
+    
+    var pageTitle: String {
+        "전체"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
 
         // Do any additional setup after loading the view.
     }
