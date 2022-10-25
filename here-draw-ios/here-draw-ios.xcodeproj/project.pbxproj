@@ -27,6 +27,11 @@
 		4FF2A68D28FEC4E000C236C1 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2A68C28FEC4E000C236C1 /* DeviceUtils.swift */; };
 		4FFB547328FF9F0800093E97 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB547228FF9F0800093E97 /* HomeListViewController.swift */; };
 		4FFB547828FFB77400093E97 /* PagerTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB547728FFB77400093E97 /* PagerTab.swift */; };
+		4FFB547B28FFEFA100093E97 /* HomeArtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB547A28FFEFA100093E97 /* HomeArtCollectionViewCell.swift */; };
+		4FFB548029016F4A00093E97 /* HomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB547F29016F4A00093E97 /* HomeTopView.swift */; };
+		4FFB5482290170E300093E97 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB5481290170E300093E97 /* BaseScrollView.swift */; };
+		4FFB54862902221100093E97 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB54852902221100093E97 /* UIButton+Extension.swift */; };
+		4FFB548B29025EE200093E97 /* HomeArtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB548A29025EE200093E97 /* HomeArtModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,11 @@
 		4FF2A68C28FEC4E000C236C1 /* DeviceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
 		4FFB547228FF9F0800093E97 /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		4FFB547728FFB77400093E97 /* PagerTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTab.swift; sourceTree = "<group>"; };
+		4FFB547A28FFEFA100093E97 /* HomeArtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArtCollectionViewCell.swift; sourceTree = "<group>"; };
+		4FFB547F29016F4A00093E97 /* HomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopView.swift; sourceTree = "<group>"; };
+		4FFB5481290170E300093E97 /* BaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
+		4FFB54852902221100093E97 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		4FFB548A29025EE200093E97 /* HomeArtModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArtModel.swift; sourceTree = "<group>"; };
 		9F2AF2563CF2B62C48D8433D /* Pods-here-draw-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.release.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A785D247F376F6FF223E4DCB /* Pods_here_draw_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_here_draw_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4D2F51B831DC63E7A7EB02 /* Pods-here-draw-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.debug.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +102,7 @@
 			children = (
 				4F89175728FACFB7005A1B81 /* Application */,
 				4F89175A28FBC269005A1B81 /* Extension */,
+				4FFB548829025EBB00093E97 /* Model */,
 				4FF2A67328FD82B200C236C1 /* Feature */,
 				4FF2A66F28FD803500C236C1 /* Network */,
 				4FF2A67228FD822400C236C1 /* Util */,
@@ -133,6 +144,7 @@
 			children = (
 				4F89175B28FBC297005A1B81 /* UIColor+Extension.swift */,
 				4F89176228FBCD3C005A1B81 /* UIFont+Extension.swift */,
+				4FFB54852902221100093E97 /* UIButton+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -211,8 +223,9 @@
 		4FF2A67C28FE4B8000C236C1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4FFB547128FF9ECE00093E97 /* ViewControllers */,
+				4FFB547928FFEF6100093E97 /* Cell */,
 				4FFB547028FF9EC100093E97 /* View */,
+				4FFB547128FF9ECE00093E97 /* ViewControllers */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -223,6 +236,8 @@
 				4FF2A67428FE3E2800C236C1 /* TabBarController.swift */,
 				4FF2A67628FE45B700C236C1 /* TabBarItem.swift */,
 				4FF2A68828FE6DFD00C236C1 /* BaseViewController.swift */,
+				4FFB547728FFB77400093E97 /* PagerTab.swift */,
+				4FFB5481290170E300093E97 /* BaseScrollView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -230,7 +245,7 @@
 		4FFB547028FF9EC100093E97 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4FFB547728FFB77400093E97 /* PagerTab.swift */,
+				4FFB547F29016F4A00093E97 /* HomeTopView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +257,30 @@
 				4FFB547228FF9F0800093E97 /* HomeListViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4FFB547928FFEF6100093E97 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4FFB547A28FFEFA100093E97 /* HomeArtCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4FFB548829025EBB00093E97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FFB548929025ECB00093E97 /* Home */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FFB548929025ECB00093E97 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4FFB548A29025EE200093E97 /* HomeArtModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		8FFD2449EBA1F1C25D444180 /* Pods */ = {
@@ -379,6 +418,8 @@
 				4FF2A68928FE6DFD00C236C1 /* BaseViewController.swift in Sources */,
 				4FFB547328FF9F0800093E97 /* HomeListViewController.swift in Sources */,
 				4F0A673828F6714600E2DFBA /* AppDelegate.swift in Sources */,
+				4FFB548029016F4A00093E97 /* HomeTopView.swift in Sources */,
+				4FFB548B29025EE200093E97 /* HomeArtModel.swift in Sources */,
 				4FFB547828FFB77400093E97 /* PagerTab.swift in Sources */,
 				4F0A673A28F6714600E2DFBA /* SceneDelegate.swift in Sources */,
 				4FF2A68628FE4C0B00C236C1 /* MypageViewController.swift in Sources */,
@@ -387,10 +428,13 @@
 				4FF2A68428FE4BFD00C236C1 /* WishViewController.swift in Sources */,
 				4FF2A68228FE4BF000C236C1 /* ArticleViewController.swift in Sources */,
 				4FF2A67528FE3E2800C236C1 /* TabBarController.swift in Sources */,
+				4FFB547B28FFEFA100093E97 /* HomeArtCollectionViewCell.swift in Sources */,
+				4FFB54862902221100093E97 /* UIButton+Extension.swift in Sources */,
 				4FF2A67E28FE4BCF00C236C1 /* HomeViewController.swift in Sources */,
 				4FF2A67128FD806800C236C1 /* NetworkUtils.swift in Sources */,
 				4FF2A68D28FEC4E000C236C1 /* DeviceUtils.swift in Sources */,
 				4FF2A67728FE45B700C236C1 /* TabBarItem.swift in Sources */,
+				4FFB5482290170E300093E97 /* BaseScrollView.swift in Sources */,
 				4F89175C28FBC297005A1B81 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
