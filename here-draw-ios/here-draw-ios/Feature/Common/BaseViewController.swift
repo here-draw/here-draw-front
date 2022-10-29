@@ -31,15 +31,17 @@ class BaseViewController: UIViewController {
         return .darkContent
     }
     
-    func setNavigationBar() {
+    // 네비게이션 바가 필요한 뷰컨에서 호출하기.
+    func initNavigationBar() {
         navigationController?.navigationBar.isHidden = false
-        navigationController?.navigationBar.backgroundColor = .gray
-        self.navigationItem.titleView?.isHidden = true
     }
     
     func hideNavigationBar() {
         navigationController?.navigationBar.isHidden = true
     }
+    
+    // 네비게이션 바 커스텀해야 할 때, 뷰컨에서 오버라이딩 
+    func setNavigationBar() {}
     
     func hierarchy() {}
     
