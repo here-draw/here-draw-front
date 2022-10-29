@@ -32,6 +32,8 @@
 		4FFB5482290170E300093E97 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB5481290170E300093E97 /* BaseScrollView.swift */; };
 		4FFB54862902221100093E97 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB54852902221100093E97 /* UIButton+Extension.swift */; };
 		4FFB548B29025EE200093E97 /* HomeArtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB548A29025EE200093E97 /* HomeArtModel.swift */; };
+		4FFB549229093EAF00093E97 /* UINavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB549129093EAF00093E97 /* UINavigationItem+Extension.swift */; };
+		4FFB5495290CD7D900093E97 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB5494290CD7D900093E97 /* NavigationBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,9 @@
 		4FFB5481290170E300093E97 /* BaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
 		4FFB54852902221100093E97 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		4FFB548A29025EE200093E97 /* HomeArtModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArtModel.swift; sourceTree = "<group>"; };
+		4FFB549129093EAF00093E97 /* UINavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extension.swift"; sourceTree = "<group>"; };
+		4FFB5493290A5E7200093E97 /* here-draw-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "here-draw-ios.entitlements"; sourceTree = "<group>"; };
+		4FFB5494290CD7D900093E97 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		9F2AF2563CF2B62C48D8433D /* Pods-here-draw-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.release.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A785D247F376F6FF223E4DCB /* Pods_here_draw_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_here_draw_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4D2F51B831DC63E7A7EB02 /* Pods-here-draw-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.debug.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 			children = (
 				4F0A674528F6714700E2DFBA /* Info.plist */,
 				4FF2A66E28FD757C00C236C1 /* Config.xcconfig */,
+				4FFB5493290A5E7200093E97 /* here-draw-ios.entitlements */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 				4F89175B28FBC297005A1B81 /* UIColor+Extension.swift */,
 				4F89176228FBCD3C005A1B81 /* UIFont+Extension.swift */,
 				4FFB54852902221100093E97 /* UIButton+Extension.swift */,
+				4FFB549129093EAF00093E97 /* UINavigationItem+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -238,6 +245,7 @@
 				4FF2A68828FE6DFD00C236C1 /* BaseViewController.swift */,
 				4FFB547728FFB77400093E97 /* PagerTab.swift */,
 				4FFB5481290170E300093E97 /* BaseScrollView.swift */,
+				4FFB5494290CD7D900093E97 /* NavigationBarView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -417,6 +425,7 @@
 			files = (
 				4FF2A68928FE6DFD00C236C1 /* BaseViewController.swift in Sources */,
 				4FFB547328FF9F0800093E97 /* HomeListViewController.swift in Sources */,
+				4FFB5495290CD7D900093E97 /* NavigationBarView.swift in Sources */,
 				4F0A673828F6714600E2DFBA /* AppDelegate.swift in Sources */,
 				4FFB548029016F4A00093E97 /* HomeTopView.swift in Sources */,
 				4FFB548B29025EE200093E97 /* HomeArtModel.swift in Sources */,
@@ -435,6 +444,7 @@
 				4FF2A68D28FEC4E000C236C1 /* DeviceUtils.swift in Sources */,
 				4FF2A67728FE45B700C236C1 /* TabBarItem.swift in Sources */,
 				4FFB5482290170E300093E97 /* BaseScrollView.swift in Sources */,
+				4FFB549229093EAF00093E97 /* UINavigationItem+Extension.swift in Sources */,
 				4F89175C28FBC297005A1B81 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,10 +574,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "here-draw-ios/Support/here-draw-ios.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HAA376DX53;
+				DEVELOPMENT_TEAM = 3AQ2WDVH35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "here-draw-ios/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -597,10 +608,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "here-draw-ios/Support/here-draw-ios.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HAA376DX53;
+				DEVELOPMENT_TEAM = 3AQ2WDVH35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "here-draw-ios/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
