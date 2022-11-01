@@ -7,15 +7,6 @@
 
 import UIKit
 
-//enum CategoryType: Int, CaseIterable {
-//    case all
-//    case character
-//    case landscape
-//    case cartoon
-//    case portrait
-//    case etc
-//}
-
 class HomeListViewController: BaseViewController, PageComponentProtocol {
     // MARK: - Properties
     
@@ -47,19 +38,37 @@ class HomeListViewController: BaseViewController, PageComponentProtocol {
     
     // MARK: - Functions
     
+    func calculateImageHeight (sourceImage : UIImage, scaledToWidth: CGFloat) -> CGFloat {
+        let size = sourceImage.size
+        let oldWidth = CGFloat(size.width)
+        let scaleFactor = scaledToWidth / oldWidth
+        let newHeight = CGFloat(size.height) * scaleFactor
+        return newHeight
+    }
+    
+    func requiredHeight(text:String , cellWidth : CGFloat) -> CGFloat {
+        // fake label
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: cellWidth, height: .greatestFiniteMagnitude)).then {
+            $0.numberOfLines = 0
+            $0.lineBreakMode = .byWordWrapping
+            $0.font = .sfPro11Pt2
+            $0.text = text
+            $0.sizeToFit()
+        }
+        return label.frame.height
+    }
+    
     override func setLayout() {
         self.view.backgroundColor = .black1
         
-        let flowLayout = UICollectionViewFlowLayout().then {
-            $0.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-            $0.scrollDirection = .vertical
-            
+        let layout = PinterestLayout().then {
+            $0.delegate = self
         }
         
-        artCollectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout).then {
-            $0.delegate = self
+        artCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout).then {
             $0.dataSource = self
             $0.register(HomeArtCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+            $0.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
             
             $0.backgroundColor = .black1
             $0.isScrollEnabled = false
@@ -87,39 +96,22 @@ extension HomeListViewController: UICollectionViewDataSource {
         }
         
         cell.fetchItem(model: artModels[indexPath.item])
-        
-        cell.prepareForReuse()
         return cell
     }
 }
 
-// MARK: - Extension UICollectionViewDelegateFlowLayout
+// MARK: - Extension PinterestLayoutDelegate
 
-extension HomeListViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+extension HomeListViewController: PinterestLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+        return artModels[indexPath.item].thumbnail.size.height
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? HomeArtCollectionViewCell
-        else {
-            return CGSize(width: 177, height: 350)
-        }
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath, cellWidth: CGFloat) -> CGFloat {
+        let imgHeight = calculateImageHeight(sourceImage: artModels[indexPath.item].thumbnail , scaledToWidth: cellWidth)
         
-        let cellWidth = (collectionView.frame.width - 60) / 2 - 1
-//        let cellHeight = cell.contentView.systemLayoutSizeFitting(CGSize(width: cellWidth, height: UIView.layoutFittingCompressedSize.height)).height
+        let textHeight = requiredHeight(text: artModels[indexPath.item].name, cellWidth: cellWidth)
         
-        cell.prepareForReuse()
-        
-        return CGSize(width: cellWidth, height: 350)
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return imgHeight + textHeight + 5
     }
 }

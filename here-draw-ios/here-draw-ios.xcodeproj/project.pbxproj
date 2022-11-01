@@ -34,6 +34,7 @@
 		4FFB548B29025EE200093E97 /* HomeArtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB548A29025EE200093E97 /* HomeArtModel.swift */; };
 		4FFB549229093EAF00093E97 /* UINavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB549129093EAF00093E97 /* UINavigationItem+Extension.swift */; };
 		4FFB5495290CD7D900093E97 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB5494290CD7D900093E97 /* NavigationBarView.swift */; };
+		4FFB549E2910445B00093E97 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB549D2910445B00093E97 /* PinterestLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		4FFB549129093EAF00093E97 /* UINavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extension.swift"; sourceTree = "<group>"; };
 		4FFB5493290A5E7200093E97 /* here-draw-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "here-draw-ios.entitlements"; sourceTree = "<group>"; };
 		4FFB5494290CD7D900093E97 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		4FFB549D2910445B00093E97 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		9F2AF2563CF2B62C48D8433D /* Pods-here-draw-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.release.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A785D247F376F6FF223E4DCB /* Pods_here_draw_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_here_draw_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4D2F51B831DC63E7A7EB02 /* Pods-here-draw-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.debug.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		4FF2A67C28FE4B8000C236C1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4FFB549C2910441A00093E97 /* Layout */,
 				4FFB547928FFEF6100093E97 /* Cell */,
 				4FFB547028FF9EC100093E97 /* View */,
 				4FFB547128FF9ECE00093E97 /* ViewControllers */,
@@ -289,6 +292,14 @@
 				4FFB548A29025EE200093E97 /* HomeArtModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		4FFB549C2910441A00093E97 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				4FFB549D2910445B00093E97 /* PinterestLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		8FFD2449EBA1F1C25D444180 /* Pods */ = {
@@ -435,6 +446,7 @@
 				4F89176328FBCD3C005A1B81 /* UIFont+Extension.swift in Sources */,
 				4FF2A68028FE4BE000C236C1 /* MessageViewController.swift in Sources */,
 				4FF2A68428FE4BFD00C236C1 /* WishViewController.swift in Sources */,
+				4FFB549E2910445B00093E97 /* PinterestLayout.swift in Sources */,
 				4FF2A68228FE4BF000C236C1 /* ArticleViewController.swift in Sources */,
 				4FF2A67528FE3E2800C236C1 /* TabBarController.swift in Sources */,
 				4FFB547B28FFEFA100093E97 /* HomeArtCollectionViewCell.swift in Sources */,
