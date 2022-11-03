@@ -38,14 +38,6 @@ class HomeListViewController: BaseViewController, PageComponentProtocol {
     
     // MARK: - Functions
     
-    func calculateImageHeight (sourceImage : UIImage, scaledToWidth: CGFloat) -> CGFloat {
-        let size = sourceImage.size
-        let oldWidth = CGFloat(size.width)
-        let scaleFactor = scaledToWidth / oldWidth
-        let newHeight = CGFloat(size.height) * scaleFactor
-        return newHeight
-    }
-    
     func requiredHeight(text:String , cellWidth : CGFloat) -> CGFloat {
         // fake label
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: cellWidth, height: .greatestFiniteMagnitude)).then {
@@ -103,12 +95,8 @@ extension HomeListViewController: UICollectionViewDataSource {
 // MARK: - Extension PinterestLayoutDelegate
 
 extension HomeListViewController: PinterestLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-        return artModels[indexPath.item].thumbnail.size.height
-    }
-    
     func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath, cellWidth: CGFloat) -> CGFloat {
-        let imgHeight = calculateImageHeight(sourceImage: artModels[indexPath.item].thumbnail , scaledToWidth: cellWidth)
+        let imgHeight = artModels[indexPath.item].thumbnail.scaledHeight(scaledWidth: cellWidth)
         
         let textHeight = requiredHeight(text: artModels[indexPath.item].name, cellWidth: cellWidth)
         
