@@ -275,7 +275,6 @@ extension PagerTab: UIScrollViewDelegate {
         barView.snp.updateConstraints {
             $0.leading.equalToSuperview().inset((percentComplete + CGFloat(currentIndex)) * barView.frame.width)
         }
-        print(currentIndex)
     }
 }
 
