@@ -70,6 +70,7 @@ class HomeViewController: BaseViewController {
     
     override func setLayout() {
         scrollView = UIScrollView().then {
+            $0.showsVerticalScrollIndicator = false
             self.view.addSubview($0)
             
             $0.snp.makeConstraints {

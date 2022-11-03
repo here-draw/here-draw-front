@@ -41,6 +41,10 @@ class PagerTab: UIView {
         }
     }
     
+    private let horizontalScrollView = UIScrollView().then {
+        $0.showsHorizontalScrollIndicator = false
+    }
+    
     private let tabStackView = UIStackView().then {
         $0.axis = .horizontal
         $0.distribution = .fill
@@ -51,7 +55,7 @@ class PagerTab: UIView {
         $0.axis = .horizontal
         $0.alignment = .center
         $0.distribution = .fillEqually
-        $0.spacing = 10
+        $0.spacing = 0
         $0.backgroundColor = .clear
     }
 
@@ -97,7 +101,7 @@ class PagerTab: UIView {
         }
 
         pageContents = viewControllers.map {
-            let button = setButton()
+            let button = setButton(width: buttonWidth(text: $0.pageTitle))
             button.setTitle($0.pageTitle, for: .normal)
             return PageContent(button: button, viewController: $0)
         }
@@ -106,7 +110,8 @@ class PagerTab: UIView {
     }
 
     private func configureUI() {
-        addSubview(tabStackView)
+        addSubview(horizontalScrollView)
+        horizontalScrollView.addSubview(tabStackView)
         let leadingSpacingView = UIView()
         tabStackView.addArrangedSubview(leadingSpacingView)
         tabStackView.addArrangedSubview(titleStackView)
@@ -114,26 +119,31 @@ class PagerTab: UIView {
         barBackgroundView.addSubview(barView)
         addSubview(containerView)
         
+        horizontalScrollView.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(22)
+            $0.center.width.equalToSuperview()
+            $0.height.equalTo(100)
+        }
+        
         tabStackView.snp.makeConstraints {
-            $0.top.equalToSuperview()
-            $0.leading.trailing.equalToSuperview()
-            $0.height.equalTo(52)
+            $0.edges.equalToSuperview().inset(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10))
+            $0.edges.equalToSuperview()
         }
         
         leadingSpacingView.snp.makeConstraints {
-            $0.leading.equalToSuperview()
+            $0.top.leading.bottom.equalToSuperview()
             $0.width.equalTo(10)
         }
         
         titleStackView.snp.makeConstraints {
             $0.leading.equalTo(leadingSpacingView.snp.trailing)
-            $0.height.equalTo(32)
+            $0.top.trailing.bottom.equalToSuperview()
         }
         
-        tabStackView.setCustomSpacing(62, after: tabStackView.subviews[1])
+        tabStackView.setCustomSpacing(0, after: tabStackView.subviews[1])
         
         barBackgroundView.snp.makeConstraints {
-            $0.top.equalTo(titleStackView.snp.bottom)
+            $0.top.equalTo(titleStackView.snp.bottom).offset(10)
             $0.leading.trailing.equalToSuperview()
             $0.height.equalTo(style.barHeight)
         }
@@ -150,18 +160,30 @@ class PagerTab: UIView {
         }
     }
     
-    private func setButton() -> UIButton {
+    private func setButton(width: CGFloat) -> UIButton {
         return UIButton().then {
             $0.titleLabel?.font = style.titleDefaultFont
             $0.setTitleColor(style.titleDefaultColor, for: .normal)
             $0.setTitleColor(style.titleActiveColor, for: .selected)
             $0.layer.cornerRadius = 16
             $0.addTarget(self, action: #selector(selectButton(_:)), for: .touchUpInside)
+            $0.titleLabel?.sizeToFit()
             
             $0.snp.makeConstraints() {
-                $0.width.equalTo(62)
+                let inset: CGFloat = 16
+                $0.width.equalTo(inset * 2 + width)
             }
         }
+    }
+    
+    private func buttonWidth(text: String) -> CGFloat {
+        let label = UILabel().then {
+            $0.font = style.titleDefaultFont
+            $0.text = text
+            $0.sizeToFit()
+        }
+        
+        return label.frame.width
     }
 
     private func setupPageViewController() {
