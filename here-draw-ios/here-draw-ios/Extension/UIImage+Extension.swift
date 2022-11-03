@@ -10,7 +10,7 @@ import UIKit
 extension UIImage {
     func scaledHeight(scaledWidth: CGFloat) -> CGFloat {
         let oldSize = self.size
-        let scaleFactor = scaledWidth / oldSize.width
-        return oldSize.height * scaleFactor
+        let scaleFactor = scaledWidth / CGFloat(oldSize.width)
+        return CGFloat(oldSize.height) * scaleFactor
     }
 }
