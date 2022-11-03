@@ -6,23 +6,15 @@
 //
 
 import UIKit
-
-import ImageSlideshow
 import SnapKit
 import Then
 
 class HomeViewController: BaseViewController {
     // MARK: - Properties
     
-    let bannerImages = [
-        UIImage(named: "poster")!,
-        UIImage(named: "poster")!,
-        UIImage(named: "poster")!
-    ]
-    
     private weak var scrollView: UIScrollView!
     private weak var stackView: UIStackView!
-    private weak var homeTopView: HomeTopView!
+    private weak var homeTopView: UIView!
     private weak var containerView: PagerTab!
 
     // MARK: - View Life Cycle
@@ -31,7 +23,7 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         initNavigationBar()
         setNavigationBar()
-        fetchBanner(images: bannerImages)
+        setLayout()
         setCategories()
     }
     
@@ -93,8 +85,7 @@ class HomeViewController: BaseViewController {
         }
         
         // 탑뷰(배너뷰)
-        homeTopView = HomeTopView().then {
-            $0.bannerImageView.delegate = self
+        homeTopView = UIView().then {
             stackView.addArrangedSubview($0)
             
             $0.snp.makeConstraints {
@@ -123,25 +114,12 @@ class HomeViewController: BaseViewController {
     }
 
     private func getCategories() -> [String] {
-        // TODO: API fetch category (차후 뷰모델로 옮기기)
+        // TODO: API fetch (차후 뷰모델로 옮기기)
         return ["전체", "캐릭터", "풍경화", "만화", "인물화", "기타"]
-    }
-    
-    private func fetchBanner(images: [UIImage]) {
-        // TODO: API fetch banner (차후 뷰모델로 옮기기)
-        images.forEach {
-            homeTopView.banners.append(ImageSource(image: $0))
-        }
     }
 }
 
 // MARK: - Extensions
-
-extension HomeViewController: ImageSlideshowDelegate {
-    func imageSlideshow(_ imageSlideshow: ImageSlideshow, didChangeCurrentPageTo page: Int) {
-        return
-    }
-}
 
 //MARK: - Preview
 
