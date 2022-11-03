@@ -5,6 +5,7 @@
 //  Created by 박희지 on 2022/10/18.
 //
 
+import Foundation
 import UIKit
 
 // 디바이스 관련 크기 정의
@@ -35,5 +36,12 @@ final class DeviceUtils {
     // 네비게이션 바 height
     static var navigationBarHeight: CGFloat {
         return UINavigationController().navigationBar.frame.height
+    }
+    
+    static public func calculateImageHeight(sourceImage: AnyObject, scaledToWidth: CGFloat) -> CGFloat {
+        let oldWidth = CGFloat(sourceImage.width)
+        let scaleFactor = scaledToWidth / oldWidth
+        let newHeight = CGFloat(sourceImage.height) * scaleFactor
+        return newHeight
     }
 }

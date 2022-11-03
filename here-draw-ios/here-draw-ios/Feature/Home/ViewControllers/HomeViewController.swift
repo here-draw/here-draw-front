@@ -98,7 +98,8 @@ class HomeViewController: BaseViewController {
             stackView.addArrangedSubview($0)
             
             $0.snp.makeConstraints {
-                $0.height.equalTo(170)
+                let banner = UIImage(named: "poster")!
+                $0.height.equalTo(banner.scaledHeight(scaledWidth: DeviceUtils.width))
             }
         }
         
