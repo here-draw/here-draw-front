@@ -39,6 +39,9 @@ extension UIFont {
         return UIFont.systemFont(ofSize: 18.0, weight: .regular)
     }
     class var sfPro17Pt: UIFont {
+        return UIFont.systemFont(ofSize: 17.0, weight: .medium)
+    }
+    class var sfPro17Pt2: UIFont {
         return UIFont.systemFont(ofSize: 17.0, weight: .regular)
     }
     class var sfPro16Pt3: UIFont {

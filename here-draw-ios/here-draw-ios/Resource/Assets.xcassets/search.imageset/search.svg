@@ -1,0 +1,7 @@
+<svg data-name="구성 요소 24 – 2" xmlns="http://www.w3.org/2000/svg" width="23.121" height="22.121" viewBox="0 0 23.121 22.121">
+    <path data-name="선 46" transform="translate(17 16)" style="stroke-linecap:round;stroke:#fff;stroke-width:3px;fill:none" d="m0 0 4 4"/>
+    <g data-name="타원 264" style="stroke:#fff;stroke-width:3px;fill:none">
+        <ellipse cx="9.75" cy="9.5" rx="9.75" ry="9.5" style="stroke:none"/>
+        <ellipse cx="9.75" cy="9.5" rx="8.25" ry="8" style="fill:none"/>
+    </g>
+</svg>
