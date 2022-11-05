@@ -58,7 +58,7 @@ class HomeViewController: BaseViewController {
             color: .white1,
             action: #selector(self.testSelector)
         )
-        naviItem.setBarButton(pos: .right, styles: notiButton, searchButton)
+        naviItem.setBarButton(pos: .right, styles: searchButton, notiButton)
         naviBar.items = [naviItem]
         
         view.addSubview(naviBar)
