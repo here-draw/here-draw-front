@@ -110,7 +110,7 @@ class HomeViewController: BaseViewController {
 
             $0.snp.makeConstraints {
                 $0.leading.trailing.bottom.equalToSuperview()
-                $0.height.equalTo(1000)
+                $0.height.equalTo(800)
             }
         }
     }

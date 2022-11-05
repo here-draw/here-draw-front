@@ -29,11 +29,17 @@ class HomeListViewController: BaseViewController, PageComponentProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setLayout()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+//        setCollectionViewHeight()
+//        artCollectionView.reloadData()
+        artCollectionView.layoutIfNeeded()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
     }
     
     // MARK: - Functions
@@ -50,8 +56,14 @@ class HomeListViewController: BaseViewController, PageComponentProtocol {
         return label.frame.height
     }
     
+//    func setCollectionViewHeight() {
+//        artCollectionView.snp.makeConstraints {
+//            $0.height.equalTo(artCollectionView.collectionViewLayout.collectionViewContentSize.height)
+//        }
+//    }
+    
     override func setLayout() {
-        self.view.backgroundColor = .black1
+        self.view.backgroundColor = .systemBackground
         
         let layout = PinterestLayout().then {
             $0.delegate = self
@@ -68,9 +80,10 @@ class HomeListViewController: BaseViewController, PageComponentProtocol {
             self.view.addSubview($0)
             
             $0.snp.makeConstraints {
-                $0.top.leading.trailing.bottom.equalTo(self.view.safeAreaLayoutGuide)
+                $0.edges.equalTo(self.view.safeAreaInsets)
             }
         }
+        view.layoutIfNeeded()
     }
 }
 
