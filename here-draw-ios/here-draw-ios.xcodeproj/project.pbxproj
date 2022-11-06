@@ -7,10 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04F7BDC030BF47FB6041BBD1 /* Pods_here_draw_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A785D247F376F6FF223E4DCB /* Pods_here_draw_ios.framework */; };
 		4F0A673828F6714600E2DFBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A673728F6714600E2DFBA /* AppDelegate.swift */; };
 		4F0A673A28F6714600E2DFBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A673928F6714600E2DFBA /* SceneDelegate.swift */; };
 		4F0A674128F6714700E2DFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F0A674028F6714700E2DFBA /* Assets.xcassets */; };
+		4F1675182917A51A008DAD11 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675172917A51A008DAD11 /* Alamofire */; };
+		4F16751B2917A609008DAD11 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F16751A2917A609008DAD11 /* SnapKit */; };
+		4F16751E2917A684008DAD11 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 4F16751D2917A684008DAD11 /* Then */; };
+		4F1675212917A7BC008DAD11 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675202917A7BC008DAD11 /* Kingfisher */; };
+		4F1675242917A8CF008DAD11 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675232917A8CF008DAD11 /* KakaoSDK */; };
+		4F1675262917A8CF008DAD11 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675252917A8CF008DAD11 /* KakaoSDKAuth */; };
+		4F1675282917A8CF008DAD11 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675272917A8CF008DAD11 /* KakaoSDKCommon */; };
+		4F16752A2917A8CF008DAD11 /* KakaoSDKCommonCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675292917A8CF008DAD11 /* KakaoSDKCommonCore */; };
+		4F16752C2917A8CF008DAD11 /* KakaoSDKNavi in Frameworks */ = {isa = PBXBuildFile; productRef = 4F16752B2917A8CF008DAD11 /* KakaoSDKNavi */; };
+		4F16752E2917A8CF008DAD11 /* KakaoSDKShare in Frameworks */ = {isa = PBXBuildFile; productRef = 4F16752D2917A8CF008DAD11 /* KakaoSDKShare */; };
+		4F1675302917A8CF008DAD11 /* KakaoSDKStory in Frameworks */ = {isa = PBXBuildFile; productRef = 4F16752F2917A8CF008DAD11 /* KakaoSDKStory */; };
+		4F1675322917A8CF008DAD11 /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675312917A8CF008DAD11 /* KakaoSDKTalk */; };
+		4F1675342917A8CF008DAD11 /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675332917A8CF008DAD11 /* KakaoSDKTemplate */; };
+		4F1675362917A8CF008DAD11 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675352917A8CF008DAD11 /* KakaoSDKUser */; };
+		4F1675392917A9AE008DAD11 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675382917A9AE008DAD11 /* Lottie */; };
+		4F16753C2917AA06008DAD11 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 4F16753B2917AA06008DAD11 /* Tabman */; };
+		4F16753F2917AA23008DAD11 /* Pageboy in Frameworks */ = {isa = PBXBuildFile; productRef = 4F16753E2917AA23008DAD11 /* Pageboy */; };
+		4F1675422917AF3C008DAD11 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675412917AF3C008DAD11 /* IQKeyboardManagerSwift */; };
 		4F89175C28FBC297005A1B81 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F89175B28FBC297005A1B81 /* UIColor+Extension.swift */; };
 		4F89176028FBCC3E005A1B81 /* GmarketSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F89175E28FBCC3E005A1B81 /* GmarketSans-Bold.otf */; };
 		4F89176128FBCC3E005A1B81 /* GmarketSans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F89175F28FBCC3E005A1B81 /* GmarketSans-Medium.otf */; };
@@ -77,9 +94,6 @@
 		4FFB5493290A5E7200093E97 /* here-draw-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "here-draw-ios.entitlements"; sourceTree = "<group>"; };
 		4FFB5494290CD7D900093E97 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		4FFB549D2910445B00093E97 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
-		9F2AF2563CF2B62C48D8433D /* Pods-here-draw-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.release.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.release.xcconfig"; sourceTree = "<group>"; };
-		A785D247F376F6FF223E4DCB /* Pods_here_draw_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_here_draw_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF4D2F51B831DC63E7A7EB02 /* Pods-here-draw-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw-ios.debug.xcconfig"; path = "Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +101,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F7BDC030BF47FB6041BBD1 /* Pods_here_draw_ios.framework in Frameworks */,
+				4F1675212917A7BC008DAD11 /* Kingfisher in Frameworks */,
+				4F1675282917A8CF008DAD11 /* KakaoSDKCommon in Frameworks */,
+				4F1675242917A8CF008DAD11 /* KakaoSDK in Frameworks */,
+				4F16752C2917A8CF008DAD11 /* KakaoSDKNavi in Frameworks */,
+				4F1675182917A51A008DAD11 /* Alamofire in Frameworks */,
+				4F1675422917AF3C008DAD11 /* IQKeyboardManagerSwift in Frameworks */,
+				4F1675392917A9AE008DAD11 /* Lottie in Frameworks */,
+				4F1675302917A8CF008DAD11 /* KakaoSDKStory in Frameworks */,
+				4F16751E2917A684008DAD11 /* Then in Frameworks */,
+				4F16752A2917A8CF008DAD11 /* KakaoSDKCommonCore in Frameworks */,
+				4F16753C2917AA06008DAD11 /* Tabman in Frameworks */,
+				4F16752E2917A8CF008DAD11 /* KakaoSDKShare in Frameworks */,
+				4F1675322917A8CF008DAD11 /* KakaoSDKTalk in Frameworks */,
+				4F1675362917A8CF008DAD11 /* KakaoSDKUser in Frameworks */,
+				4F16751B2917A609008DAD11 /* SnapKit in Frameworks */,
+				4F16753F2917AA23008DAD11 /* Pageboy in Frameworks */,
+				4F1675342917A8CF008DAD11 /* KakaoSDKTemplate in Frameworks */,
+				4F1675262917A8CF008DAD11 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,8 +130,6 @@
 			children = (
 				4F0A673628F6714600E2DFBA /* here-draw-ios */,
 				4F0A673528F6714600E2DFBA /* Products */,
-				8FFD2449EBA1F1C25D444180 /* Pods */,
-				98EB20A4DF133F2E288AE135 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,23 +367,6 @@
 			path = Layout;
 			sourceTree = "<group>";
 		};
-		8FFD2449EBA1F1C25D444180 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CF4D2F51B831DC63E7A7EB02 /* Pods-here-draw-ios.debug.xcconfig */,
-				9F2AF2563CF2B62C48D8433D /* Pods-here-draw-ios.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		98EB20A4DF133F2E288AE135 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A785D247F376F6FF223E4DCB /* Pods_here_draw_ios.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -362,17 +374,35 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F0A674828F6714700E2DFBA /* Build configuration list for PBXNativeTarget "here-draw-ios" */;
 			buildPhases = (
-				F80297764C9D2BADC51F34FF /* [CP] Check Pods Manifest.lock */,
 				4F0A673028F6714600E2DFBA /* Sources */,
 				4F0A673128F6714600E2DFBA /* Frameworks */,
 				4F0A673228F6714600E2DFBA /* Resources */,
-				91F65993DB4D6C09AD8336B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "here-draw-ios";
+			packageProductDependencies = (
+				4F1675172917A51A008DAD11 /* Alamofire */,
+				4F16751A2917A609008DAD11 /* SnapKit */,
+				4F16751D2917A684008DAD11 /* Then */,
+				4F1675202917A7BC008DAD11 /* Kingfisher */,
+				4F1675232917A8CF008DAD11 /* KakaoSDK */,
+				4F1675252917A8CF008DAD11 /* KakaoSDKAuth */,
+				4F1675272917A8CF008DAD11 /* KakaoSDKCommon */,
+				4F1675292917A8CF008DAD11 /* KakaoSDKCommonCore */,
+				4F16752B2917A8CF008DAD11 /* KakaoSDKNavi */,
+				4F16752D2917A8CF008DAD11 /* KakaoSDKShare */,
+				4F16752F2917A8CF008DAD11 /* KakaoSDKStory */,
+				4F1675312917A8CF008DAD11 /* KakaoSDKTalk */,
+				4F1675332917A8CF008DAD11 /* KakaoSDKTemplate */,
+				4F1675352917A8CF008DAD11 /* KakaoSDKUser */,
+				4F1675382917A9AE008DAD11 /* Lottie */,
+				4F16753B2917AA06008DAD11 /* Tabman */,
+				4F16753E2917AA23008DAD11 /* Pageboy */,
+				4F1675412917AF3C008DAD11 /* IQKeyboardManagerSwift */,
+			);
 			productName = "here-draw-ios";
 			productReference = 4F0A673428F6714600E2DFBA /* here-draw-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -401,6 +431,17 @@
 				Base,
 			);
 			mainGroup = 4F0A672B28F6714600E2DFBA;
+			packageReferences = (
+				4F1675162917A51A008DAD11 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4F1675192917A609008DAD11 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4F16751C2917A684008DAD11 /* XCRemoteSwiftPackageReference "Then" */,
+				4F16751F2917A7BC008DAD11 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				4F1675372917A9AE008DAD11 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				4F16753A2917AA06008DAD11 /* XCRemoteSwiftPackageReference "Tabman" */,
+				4F16753D2917AA23008DAD11 /* XCRemoteSwiftPackageReference "Pageboy" */,
+				4F1675402917AF3C008DAD11 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 4F0A673528F6714600E2DFBA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -422,48 +463,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		91F65993DB4D6C09AD8336B3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-here-draw-ios/Pods-here-draw-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F80297764C9D2BADC51F34FF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-here-draw-ios-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F0A673028F6714600E2DFBA /* Sources */ = {
@@ -710,6 +709,174 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F1675162917A51A008DAD11 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+		4F1675192917A609008DAD11 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4F16751C2917A684008DAD11 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		4F16751F2917A7BC008DAD11 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		4F1675372917A9AE008DAD11 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		4F16753A2917AA06008DAD11 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		4F16753D2917AA23008DAD11 /* XCRemoteSwiftPackageReference "Pageboy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Pageboy.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		4F1675402917AF3C008DAD11 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F1675172917A51A008DAD11 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675162917A51A008DAD11 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4F16751A2917A609008DAD11 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675192917A609008DAD11 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		4F16751D2917A684008DAD11 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F16751C2917A684008DAD11 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		4F1675202917A7BC008DAD11 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F16751F2917A7BC008DAD11 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		4F1675232917A8CF008DAD11 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		4F1675252917A8CF008DAD11 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		4F1675272917A8CF008DAD11 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		4F1675292917A8CF008DAD11 /* KakaoSDKCommonCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommonCore;
+		};
+		4F16752B2917A8CF008DAD11 /* KakaoSDKNavi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKNavi;
+		};
+		4F16752D2917A8CF008DAD11 /* KakaoSDKShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKShare;
+		};
+		4F16752F2917A8CF008DAD11 /* KakaoSDKStory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKStory;
+		};
+		4F1675312917A8CF008DAD11 /* KakaoSDKTalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTalk;
+		};
+		4F1675332917A8CF008DAD11 /* KakaoSDKTemplate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTemplate;
+		};
+		4F1675352917A8CF008DAD11 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675222917A8CF008DAD11 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+		4F1675382917A9AE008DAD11 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675372917A9AE008DAD11 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		4F16753B2917AA06008DAD11 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F16753A2917AA06008DAD11 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+		4F16753E2917AA23008DAD11 /* Pageboy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F16753D2917AA23008DAD11 /* XCRemoteSwiftPackageReference "Pageboy" */;
+			productName = Pageboy;
+		};
+		4F1675412917AF3C008DAD11 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1675402917AF3C008DAD11 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F0A672C28F6714600E2DFBA /* Project object */;
 }

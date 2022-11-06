@@ -7,7 +7,7 @@
 
 import UIKit
 
-import ImageSlideshow
+//import ImageSlideshow
 import SnapKit
 import Then
 
@@ -22,7 +22,7 @@ class HomeViewController: BaseViewController {
     
     private weak var scrollView: UIScrollView!
     private weak var stackView: UIStackView!
-    private weak var homeTopView: HomeTopView!
+//    private weak var homeTopView: HomeTopView!
     private weak var containerView: PagerTab!
 
     // MARK: - View Life Cycle
@@ -94,15 +94,15 @@ class HomeViewController: BaseViewController {
         }
         
         // 탑뷰(배너뷰)
-        homeTopView = HomeTopView().then {
-            $0.bannerImageView.delegate = self
-            stackView.addArrangedSubview($0)
-            
-            $0.snp.makeConstraints {
-                let banner = UIImage(named: "poster")!
-                $0.height.equalTo(banner.scaledHeight(scaledWidth: DeviceUtils.width))
-            }
-        }
+//        homeTopView = HomeTopView().then {
+//            $0.bannerImageView.delegate = self
+//            stackView.addArrangedSubview($0)
+//
+//            $0.snp.makeConstraints {
+//                let banner = UIImage(named: "poster")!
+//                $0.height.equalTo(banner.scaledHeight(scaledWidth: DeviceUtils.width))
+//            }
+//        }
         
         // 컨테이너뷰(작품 리스트 탭 뷰)
         containerView = PagerTab().then {
@@ -130,16 +130,16 @@ class HomeViewController: BaseViewController {
     
     private func fetchBanner(images: [UIImage]) {
         // TODO: API fetch banner (차후 뷰모델로 옮기기)
-        images.forEach {
-            homeTopView.banners.append(ImageSource(image: $0))
-        }
+//        images.forEach {
+//            homeTopView.banners.append(ImageSource(image: $0))
+//        }
     }
 }
 
 // MARK: - Extensions
 
-extension HomeViewController: ImageSlideshowDelegate {
-    func imageSlideshow(_ imageSlideshow: ImageSlideshow, didChangeCurrentPageTo page: Int) {
-        return
-    }
-}
+//extension HomeViewController: ImageSlideshowDelegate {
+//    func imageSlideshow(_ imageSlideshow: ImageSlideshow, didChangeCurrentPageTo page: Int) {
+//        return
+//    }
+//}

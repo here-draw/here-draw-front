@@ -8,7 +8,6 @@
 import UIKit
 import AuthenticationServices
 
-import ImageSlideshow
 import SnapKit
 import Then
 
