@@ -27,6 +27,8 @@
 		4FF2A68D28FEC4E000C236C1 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2A68C28FEC4E000C236C1 /* DeviceUtils.swift */; };
 		4FF4B4942913D92F0035ED7F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4B4932913D92F0035ED7F /* BaseView.swift */; };
 		4FF4B49A29142FF40035ED7F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4B49929142FF40035ED7F /* UIImage+Extension.swift */; };
+		4FF4B49D291646320035ED7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4B49C291646320035ED7F /* LoginViewController.swift */; };
+		4FF4B4A1291691A60035ED7F /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4B4A0291691A60035ED7F /* OnboardingCollectionViewCell.swift */; };
 		4FFB547328FF9F0800093E97 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB547228FF9F0800093E97 /* HomeListViewController.swift */; };
 		4FFB547828FFB77400093E97 /* PagerTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB547728FFB77400093E97 /* PagerTab.swift */; };
 		4FFB547B28FFEFA100093E97 /* HomeArtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB547A28FFEFA100093E97 /* HomeArtCollectionViewCell.swift */; };
@@ -62,6 +64,8 @@
 		4FF2A68C28FEC4E000C236C1 /* DeviceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
 		4FF4B4932913D92F0035ED7F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		4FF4B49929142FF40035ED7F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		4FF4B49C291646320035ED7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4FF4B4A0291691A60035ED7F /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		4FFB547228FF9F0800093E97 /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		4FFB547728FFB77400093E97 /* PagerTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTab.swift; sourceTree = "<group>"; };
 		4FFB547A28FFEFA100093E97 /* HomeArtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArtCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 		4FF2A67328FD82B200C236C1 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				4FF4B49B291646050035ED7F /* Login */,
 				4FF2A68728FE4C1300C236C1 /* Common */,
 				4FF2A67C28FE4B8000C236C1 /* Home */,
 				4FF2A67B28FE4B7700C236C1 /* Message */,
@@ -257,6 +262,31 @@
 				4FF4B4932913D92F0035ED7F /* BaseView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		4FF4B49B291646050035ED7F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4FF4B49F291690710035ED7F /* Cell */,
+				4FF4B49E291690570035ED7F /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4FF4B49E291690570035ED7F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4FF4B49C291646320035ED7F /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4FF4B49F291690710035ED7F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4FF4B4A0291691A60035ED7F /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		4FFB547028FF9EC100093E97 /* View */ = {
@@ -440,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF4B49D291646320035ED7F /* LoginViewController.swift in Sources */,
 				4FF2A68928FE6DFD00C236C1 /* BaseViewController.swift in Sources */,
 				4FFB547328FF9F0800093E97 /* HomeListViewController.swift in Sources */,
 				4FFB5495290CD7D900093E97 /* NavigationBarView.swift in Sources */,
@@ -458,6 +489,7 @@
 				4FF2A68228FE4BF000C236C1 /* ArticleViewController.swift in Sources */,
 				4FF2A67528FE3E2800C236C1 /* TabBarController.swift in Sources */,
 				4FFB547B28FFEFA100093E97 /* HomeArtCollectionViewCell.swift in Sources */,
+				4FF4B4A1291691A60035ED7F /* OnboardingCollectionViewCell.swift in Sources */,
 				4FFB54862902221100093E97 /* UIButton+Extension.swift in Sources */,
 				4FF2A67E28FE4BCF00C236C1 /* HomeViewController.swift in Sources */,
 				4FF2A67128FD806800C236C1 /* NetworkUtils.swift in Sources */,
