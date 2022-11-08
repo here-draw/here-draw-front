@@ -1,0 +1,115 @@
+PODS:
+  - Alamofire (5.6.2)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - IQKeyboardManager (6.5.10)
+  - KakaoSDK (2.11.3):
+    - KakaoSDKAuth (= 2.11.3)
+    - KakaoSDKCommon (= 2.11.3)
+    - KakaoSDKFriend (= 2.11.3)
+    - KakaoSDKNavi (= 2.11.3)
+    - KakaoSDKShare (= 2.11.3)
+    - KakaoSDKStory (= 2.11.3)
+    - KakaoSDKTalk (= 2.11.3)
+    - KakaoSDKTemplate (= 2.11.3)
+    - KakaoSDKUser (= 2.11.3)
+  - KakaoSDKAuth (2.11.3):
+    - KakaoSDKCommon (= 2.11.3)
+  - KakaoSDKCommon (2.11.3):
+    - KakaoSDKCommon/Common (= 2.11.3)
+    - KakaoSDKCommon/Network (= 2.11.3)
+  - KakaoSDKCommon/Common (2.11.3)
+  - KakaoSDKCommon/Network (2.11.3):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.11.3)
+  - KakaoSDKFriend (2.11.3):
+    - KakaoSDKUser (= 2.11.3)
+  - KakaoSDKNavi (2.11.3):
+    - KakaoSDKCommon/Common (= 2.11.3)
+  - KakaoSDKShare (2.11.3):
+    - KakaoSDKCommon (= 2.11.3)
+    - KakaoSDKTemplate (= 2.11.3)
+  - KakaoSDKStory (2.11.3):
+    - KakaoSDKUser (= 2.11.3)
+  - KakaoSDKTalk (2.11.3):
+    - KakaoSDKTemplate (= 2.11.3)
+    - KakaoSDKUser (= 2.11.3)
+  - KakaoSDKTemplate (2.11.3):
+    - KakaoSDKCommon/Common (= 2.11.3)
+  - KakaoSDKUser (2.11.3):
+    - KakaoSDKAuth (= 2.11.3)
+  - Kingfisher (7.4.1)
+  - lottie-ios (3.5.0)
+  - Pageboy (4.0.1)
+  - SnapKit (5.6.0)
+  - SocketRocket (0.6.0)
+  - StompClientLib (1.4.1):
+    - SocketRocket
+  - Tabman (3.0.0):
+    - Pageboy (~> 4.0.0)
+  - Then (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - ImageSlideshow
+  - IQKeyboardManager
+  - KakaoSDK
+  - Kingfisher
+  - lottie-ios
+  - Pageboy
+  - SnapKit
+  - StompClientLib
+  - Tabman
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ImageSlideshow
+    - IQKeyboardManager
+    - KakaoSDK
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKFriend
+    - KakaoSDKNavi
+    - KakaoSDKShare
+    - KakaoSDKStory
+    - KakaoSDKTalk
+    - KakaoSDKTemplate
+    - KakaoSDKUser
+    - Kingfisher
+    - lottie-ios
+    - Pageboy
+    - SnapKit
+    - SocketRocket
+    - StompClientLib
+    - Tabman
+    - Then
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
+  KakaoSDK: 7ebf1862d9f9014e402eb756b2d906a60c092661
+  KakaoSDKAuth: a64dde90516e18fdfc35b83bbad2677c3675c329
+  KakaoSDKCommon: b4235203f67a5b6ee2df75eaf9bbc863c6d92e09
+  KakaoSDKFriend: 0babeed5e025207a518a53fee08b7e369c009238
+  KakaoSDKNavi: 5168499579e915cf87c5f715b8de3c0706e310a3
+  KakaoSDKShare: 1a43689303e049a9b61a10e079ddb66e6e4a9806
+  KakaoSDKStory: d932e8a4a2d2ad9ca04b789aacb510eb65865c84
+  KakaoSDKTalk: f20736b6016c25b136cfc62b1949dc15686a2751
+  KakaoSDKTemplate: 295e57cf2826bc2cbdaf2c37e1ee62e69ea58d74
+  KakaoSDKUser: 9a42e9b74855ce876b071c841418aa6726534010
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
+  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
+  Pageboy: 57dc3ebce70d3516f141d71d89d748acb98c10fb
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  StompClientLib: ac40390e9660c574675f1c933bec81c8e2811a4f
+  Tabman: dab5338a0bd4046622cbd106baa84af4652bdc60
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+
+PODFILE CHECKSUM: 7a7b914647f6e971bda21dc94a8225e2ebbebbdd
+
+COCOAPODS: 1.11.3

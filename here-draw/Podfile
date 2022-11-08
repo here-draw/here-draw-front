@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'here-draw' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for here-draw
+  pod 'Alamofire', '~> 5.2'
+  pod 'ImageSlideshow'
+  pod 'KakaoSDK'
+  pod 'Kingfisher'
+  pod 'lottie-ios'
+  pod 'Pageboy'
+  pod 'SnapKit'
+  pod 'Tabman'
+  pod 'Then'
+  pod 'IQKeyboardManager'
+  pod 'StompClientLib'
+end
