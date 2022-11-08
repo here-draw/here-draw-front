@@ -10,9 +10,7 @@
 		4FA5491D291A2DE200BF5E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5491C291A2DE200BF5E02 /* AppDelegate.swift */; };
 		4FA5491F291A2DE200BF5E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5491E291A2DE200BF5E02 /* SceneDelegate.swift */; };
 		4FA54921291A2DE200BF5E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA54920291A2DE200BF5E02 /* ViewController.swift */; };
-		4FA54924291A2DE200BF5E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA54922291A2DE200BF5E02 /* Main.storyboard */; };
 		4FA54926291A2DE400BF5E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA54925291A2DE400BF5E02 /* Assets.xcassets */; };
-		4FA54929291A2DE400BF5E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA54927291A2DE400BF5E02 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +18,10 @@
 		4FA5491C291A2DE200BF5E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FA5491E291A2DE200BF5E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4FA54920291A2DE200BF5E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4FA54923291A2DE200BF5E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FA54925291A2DE400BF5E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4FA54928291A2DE400BF5E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FA5492A291A2DE400BF5E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA54931291A331300BF5E02 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		4FA54932291A346200BF5E02 /* HereDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HereDraw.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +57,20 @@
 				4FA5491C291A2DE200BF5E02 /* AppDelegate.swift */,
 				4FA5491E291A2DE200BF5E02 /* SceneDelegate.swift */,
 				4FA54920291A2DE200BF5E02 /* ViewController.swift */,
-				4FA54922291A2DE200BF5E02 /* Main.storyboard */,
 				4FA54925291A2DE400BF5E02 /* Assets.xcassets */,
-				4FA54927291A2DE400BF5E02 /* LaunchScreen.storyboard */,
-				4FA5492A291A2DE400BF5E02 /* Info.plist */,
+				4FA54930291A32DB00BF5E02 /* Support */,
 			);
 			path = HereDraw;
+			sourceTree = "<group>";
+		};
+		4FA54930291A32DB00BF5E02 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5492A291A2DE400BF5E02 /* Info.plist */,
+				4FA54931291A331300BF5E02 /* Config.xcconfig */,
+				4FA54932291A346200BF5E02 /* HereDraw.entitlements */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA54929291A2DE400BF5E02 /* LaunchScreen.storyboard in Resources */,
 				4FA54926291A2DE400BF5E02 /* Assets.xcassets in Resources */,
-				4FA54924291A2DE200BF5E02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,28 +150,10 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		4FA54922291A2DE200BF5E02 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FA54923291A2DE200BF5E02 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4FA54927291A2DE400BF5E02 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FA54928291A2DE400BF5E02 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		4FA5492B291A2DE400BF5E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA54931291A331300BF5E02 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -228,6 +214,7 @@
 		};
 		4FA5492C291A2DE400BF5E02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA54931291A331300BF5E02 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -282,17 +269,19 @@
 		};
 		4FA5492E291A2DE400BF5E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA54931291A331300BF5E02 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HereDraw/Support/HereDraw.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3AQ2WDVH35;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HereDraw/Info.plist;
+				INFOPLIST_FILE = HereDraw/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,17 +299,19 @@
 		};
 		4FA5492F291A2DE400BF5E02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA54931291A331300BF5E02 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HereDraw/Support/HereDraw.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3AQ2WDVH35;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HereDraw/Info.plist;
+				INFOPLIST_FILE = HereDraw/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
