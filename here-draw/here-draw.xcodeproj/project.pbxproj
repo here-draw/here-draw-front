@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72B8788E9F6AEFAFB0089F08 /* Pods_here_draw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1965BC3DD6149F975B3CE8A /* Pods_here_draw.framework */; };
 		F4BBC25D291A3D2400851A1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC25C291A3D2400851A1A /* AppDelegate.swift */; };
 		F4BBC25F291A3D2400851A1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC25E291A3D2400851A1A /* SceneDelegate.swift */; };
 		F4BBC261291A3D2400851A1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC260291A3D2400851A1A /* ViewController.swift */; };
@@ -17,9 +16,6 @@
 /* Begin PBXFileReference section */
 		4FA54934291A42D400BF5E02 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		4FA54936291A43D300BF5E02 /* here-draw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "here-draw.entitlements"; sourceTree = "<group>"; };
-		64F778586F91396F0098D21E /* Pods-here-draw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw.release.xcconfig"; path = "Target Support Files/Pods-here-draw/Pods-here-draw.release.xcconfig"; sourceTree = "<group>"; };
-		89CB7FEB6EADAEA0BA4B4853 /* Pods-here-draw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-here-draw.debug.xcconfig"; path = "Target Support Files/Pods-here-draw/Pods-here-draw.debug.xcconfig"; sourceTree = "<group>"; };
-		A1965BC3DD6149F975B3CE8A /* Pods_here_draw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_here_draw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BBC259291A3D2400851A1A /* here-draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "here-draw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BBC25C291A3D2400851A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BBC25E291A3D2400851A1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72B8788E9F6AEFAFB0089F08 /* Pods_here_draw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,22 +54,11 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		ABD78F8D389FDF0C1A80B479 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				89CB7FEB6EADAEA0BA4B4853 /* Pods-here-draw.debug.xcconfig */,
-				64F778586F91396F0098D21E /* Pods-here-draw.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		F4BBC250291A3D2400851A1A = {
 			isa = PBXGroup;
 			children = (
 				F4BBC25B291A3D2400851A1A /* here-draw */,
 				F4BBC25A291A3D2400851A1A /* Products */,
-				ABD78F8D389FDF0C1A80B479 /* Pods */,
-				FA0FFE4A9281FDFCF0AC7F8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,14 +81,6 @@
 			path = "here-draw";
 			sourceTree = "<group>";
 		};
-		FA0FFE4A9281FDFCF0AC7F8A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A1965BC3DD6149F975B3CE8A /* Pods_here_draw.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,11 +88,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4BBC26D291A3D2500851A1A /* Build configuration list for PBXNativeTarget "here-draw" */;
 			buildPhases = (
-				6D40D77BF25C6B8E72DD8A11 /* [CP] Check Pods Manifest.lock */,
 				F4BBC255291A3D2400851A1A /* Sources */,
 				F4BBC256291A3D2400851A1A /* Frameworks */,
 				F4BBC257291A3D2400851A1A /* Resources */,
-				5DFF38FBD127440E31077C01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,48 +144,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5DFF38FBD127440E31077C01 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-here-draw/Pods-here-draw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-here-draw/Pods-here-draw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-here-draw/Pods-here-draw-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6D40D77BF25C6B8E72DD8A11 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-here-draw-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4BBC255291A3D2400851A1A /* Sources */ = {
@@ -352,7 +284,7 @@
 				CODE_SIGN_ENTITLEMENTS = "here-draw/Support/here-draw.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZC7N435367;
+				DEVELOPMENT_TEAM = 3AQ2WDVH35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "here-draw/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -383,7 +315,7 @@
 				CODE_SIGN_ENTITLEMENTS = "here-draw/Support/here-draw.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZC7N435367;
+				DEVELOPMENT_TEAM = 3AQ2WDVH35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "here-draw/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
