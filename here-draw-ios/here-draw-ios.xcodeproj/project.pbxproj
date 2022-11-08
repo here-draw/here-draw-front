@@ -28,6 +28,11 @@
 		4F16753C2917AA06008DAD11 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 4F16753B2917AA06008DAD11 /* Tabman */; };
 		4F16753F2917AA23008DAD11 /* Pageboy in Frameworks */ = {isa = PBXBuildFile; productRef = 4F16753E2917AA23008DAD11 /* Pageboy */; };
 		4F1675422917AF3C008DAD11 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1675412917AF3C008DAD11 /* IQKeyboardManagerSwift */; };
+		4F167544291972F2008DAD11 /* BottomSheetMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F167543291972F2008DAD11 /* BottomSheetMode.swift */; };
+		4F16754729197635008DAD11 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16754629197635008DAD11 /* BottomSheetView.swift */; };
+		4F16754929197767008DAD11 /* PassThroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16754829197767008DAD11 /* PassThroughView.swift */; };
+		4F16754E29198F2E008DAD11 /* AgreeBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16754D29198F2E008DAD11 /* AgreeBottomSheetView.swift */; };
+		4F167551291A1232008DAD11 /* AgreementTerms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F167550291A1232008DAD11 /* AgreementTerms.swift */; };
 		4F89175C28FBC297005A1B81 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F89175B28FBC297005A1B81 /* UIColor+Extension.swift */; };
 		4F89176028FBCC3E005A1B81 /* GmarketSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F89175E28FBCC3E005A1B81 /* GmarketSans-Bold.otf */; };
 		4F89176128FBCC3E005A1B81 /* GmarketSans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F89175F28FBCC3E005A1B81 /* GmarketSans-Medium.otf */; };
@@ -64,6 +69,11 @@
 		4F0A673928F6714600E2DFBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4F0A674028F6714700E2DFBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F0A674528F6714700E2DFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F167543291972F2008DAD11 /* BottomSheetMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetMode.swift; sourceTree = "<group>"; };
+		4F16754629197635008DAD11 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		4F16754829197767008DAD11 /* PassThroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassThroughView.swift; sourceTree = "<group>"; };
+		4F16754D29198F2E008DAD11 /* AgreeBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeBottomSheetView.swift; sourceTree = "<group>"; };
+		4F167550291A1232008DAD11 /* AgreementTerms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementTerms.swift; sourceTree = "<group>"; };
 		4F89175B28FBC297005A1B81 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4F89175E28FBCC3E005A1B81 /* GmarketSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GmarketSans-Bold.otf"; sourceTree = "<group>"; };
 		4F89175F28FBCC3E005A1B81 /* GmarketSans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GmarketSans-Medium.otf"; sourceTree = "<group>"; };
@@ -156,6 +166,22 @@
 			path = "here-draw-ios";
 			sourceTree = "<group>";
 		};
+		4F16754C29198EF1008DAD11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F16754D29198F2E008DAD11 /* AgreeBottomSheetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F16754F291A11CB008DAD11 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4F167550291A1232008DAD11 /* AgreementTerms.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		4F89175728FACFB7005A1B81 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,8 +251,8 @@
 		4FF2A67328FD82B200C236C1 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				4FF4B49B291646050035ED7F /* Login */,
 				4FF2A68728FE4C1300C236C1 /* Common */,
+				4FF4B49B291646050035ED7F /* Login */,
 				4FF2A67C28FE4B8000C236C1 /* Home */,
 				4FF2A67B28FE4B7700C236C1 /* Message */,
 				4FF2A67A28FE4B6900C236C1 /* Article */,
@@ -289,6 +315,8 @@
 				4FFB5481290170E300093E97 /* BaseScrollView.swift */,
 				4FFB5494290CD7D900093E97 /* NavigationBarView.swift */,
 				4FF4B4932913D92F0035ED7F /* BaseView.swift */,
+				4F16754629197635008DAD11 /* BottomSheetView.swift */,
+				4F16754829197767008DAD11 /* PassThroughView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -297,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				4FF4B49F291690710035ED7F /* Cell */,
+				4F16754C29198EF1008DAD11 /* View */,
 				4FF4B49E291690570035ED7F /* ViewController */,
 			);
 			path = Login;
@@ -346,7 +375,9 @@
 		4FFB548829025EBB00093E97 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F16754F291A11CB008DAD11 /* Login */,
 				4FFB548929025ECB00093E97 /* Home */,
+				4F167543291972F2008DAD11 /* BottomSheetMode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -471,14 +502,18 @@
 			files = (
 				4FF4B49D291646320035ED7F /* LoginViewController.swift in Sources */,
 				4FF2A68928FE6DFD00C236C1 /* BaseViewController.swift in Sources */,
+				4F16754E29198F2E008DAD11 /* AgreeBottomSheetView.swift in Sources */,
 				4FFB547328FF9F0800093E97 /* HomeListViewController.swift in Sources */,
 				4FFB5495290CD7D900093E97 /* NavigationBarView.swift in Sources */,
 				4F0A673828F6714600E2DFBA /* AppDelegate.swift in Sources */,
 				4FFB548029016F4A00093E97 /* HomeTopView.swift in Sources */,
 				4FFB548B29025EE200093E97 /* HomeArtModel.swift in Sources */,
 				4FFB547828FFB77400093E97 /* PagerTab.swift in Sources */,
+				4F167544291972F2008DAD11 /* BottomSheetMode.swift in Sources */,
 				4F0A673A28F6714600E2DFBA /* SceneDelegate.swift in Sources */,
 				4FF2A68628FE4C0B00C236C1 /* MypageViewController.swift in Sources */,
+				4F16754729197635008DAD11 /* BottomSheetView.swift in Sources */,
+				4F16754929197767008DAD11 /* PassThroughView.swift in Sources */,
 				4F89176328FBCD3C005A1B81 /* UIFont+Extension.swift in Sources */,
 				4FF2A68028FE4BE000C236C1 /* MessageViewController.swift in Sources */,
 				4FF2A68428FE4BFD00C236C1 /* WishViewController.swift in Sources */,
@@ -493,6 +528,7 @@
 				4FF2A67E28FE4BCF00C236C1 /* HomeViewController.swift in Sources */,
 				4FF2A67128FD806800C236C1 /* NetworkUtils.swift in Sources */,
 				4FF2A68D28FEC4E000C236C1 /* DeviceUtils.swift in Sources */,
+				4F167551291A1232008DAD11 /* AgreementTerms.swift in Sources */,
 				4FF2A67728FE45B700C236C1 /* TabBarItem.swift in Sources */,
 				4FFB5482290170E300093E97 /* BaseScrollView.swift in Sources */,
 				4FFB549229093EAF00093E97 /* UINavigationItem+Extension.swift in Sources */,

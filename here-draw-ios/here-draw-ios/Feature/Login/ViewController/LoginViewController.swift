@@ -29,6 +29,7 @@ class LoginViewController: BaseViewController {
     private weak var pageIndicator: UIPageControl!
     private weak var kakaoLoginButton: UIButton!
     private weak var appleLoginButton: UIButton!
+    private weak var bottomSheetView: AgreeBottomSheetView!
 
     // MARK: - View Life Cycle
     
@@ -170,6 +171,18 @@ class LoginViewController: BaseViewController {
         onboardingCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
+    func presentBottomSheet() {
+        bottomSheetView = AgreeBottomSheetView().then {
+            $0.bottomSheetColor = .black1
+            $0.bottomSheetShadowColor = UIColor.pastelYellow.cgColor
+            view.addSubview($0)
+            
+            $0.snp.makeConstraints {
+                $0.edges.equalToSuperview()
+            }
+        }
+    }
+    
     // MARK: objc func
     
     @objc
@@ -180,12 +193,12 @@ class LoginViewController: BaseViewController {
     
     @objc
     func kakaoLoginTapped() {
-        print("kakao")
+        presentBottomSheet()
     }
     
     @objc
     func appleLoginTapped() {
-        print("apple")
+        presentBottomSheet()
     }
 }
 
@@ -238,3 +251,29 @@ extension LoginViewController: UICollectionViewDelegate {
     }
 }
 
+
+//MARK: - Preview
+
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+struct ViewRepresentable: UIViewRepresentable{
+    typealias UIViewType = UIView
+    private let vc = LoginViewController()
+    
+    func makeUIView(context: Context) -> UIView {
+        vc.view
+    }
+    
+    func updateUIView(_ uiView: UIView, context: Context) {
+        // 데이터 로드 필요할 때
+        // vc.tableView.reloadData()
+    }
+}
+
+struct ViewController_Previews: PreviewProvider{
+    static var previews: some View{
+        ViewRepresentable()
+    }
+}
+#endif
