@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  here-draw
+//
+//  Created by 박희지 on 2022/11/08.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL_DEV = https:/$()/dev.leesyum.shop
+BASE_URL_PROD = https:/$()/prod.leesyum.shop
+KAKAO_NATIVE_APP_KEY = 5b632e608fb5cf06561b95be00e3c16e

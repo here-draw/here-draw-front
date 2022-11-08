@@ -10,16 +10,16 @@
 		F4BBC25D291A3D2400851A1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC25C291A3D2400851A1A /* AppDelegate.swift */; };
 		F4BBC25F291A3D2400851A1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC25E291A3D2400851A1A /* SceneDelegate.swift */; };
 		F4BBC261291A3D2400851A1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC260291A3D2400851A1A /* ViewController.swift */; };
-		F4BBC264291A3D2400851A1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BBC262291A3D2400851A1A /* Main.storyboard */; };
 		F4BBC266291A3D2500851A1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BBC265291A3D2500851A1A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA54934291A42D400BF5E02 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		4FA54936291A43D300BF5E02 /* here-draw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "here-draw.entitlements"; sourceTree = "<group>"; };
 		F4BBC259291A3D2400851A1A /* here-draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "here-draw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BBC25C291A3D2400851A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BBC25E291A3D2400851A1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4BBC260291A3D2400851A1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4BBC263291A3D2400851A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4BBC265291A3D2500851A1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4BBC26A291A3D2500851A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +35,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA54933291A42BF00BF5E02 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				4FA54936291A43D300BF5E02 /* here-draw.entitlements */,
+				F4BBC26A291A3D2500851A1A /* Info.plist */,
+				4FA54934291A42D400BF5E02 /* Config.xcconfig */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		4FA54935291A439800BF5E02 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F4BBC25C291A3D2400851A1A /* AppDelegate.swift */,
+				F4BBC25E291A3D2400851A1A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		F4BBC250291A3D2400851A1A = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +73,10 @@
 		F4BBC25B291A3D2400851A1A /* here-draw */ = {
 			isa = PBXGroup;
 			children = (
-				F4BBC25C291A3D2400851A1A /* AppDelegate.swift */,
-				F4BBC25E291A3D2400851A1A /* SceneDelegate.swift */,
+				4FA54935291A439800BF5E02 /* Application */,
+				4FA54933291A42BF00BF5E02 /* Support */,
 				F4BBC260291A3D2400851A1A /* ViewController.swift */,
-				F4BBC262291A3D2400851A1A /* Main.storyboard */,
 				F4BBC265291A3D2500851A1A /* Assets.xcassets */,
-				F4BBC26A291A3D2500851A1A /* Info.plist */,
 			);
 			path = "here-draw";
 			sourceTree = "<group>";
@@ -123,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4BBC266291A3D2500851A1A /* Assets.xcassets in Resources */,
-				F4BBC264291A3D2400851A1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,20 +158,10 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		F4BBC262291A3D2400851A1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4BBC263291A3D2400851A1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		F4BBC26B291A3D2500851A1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA54934291A42D400BF5E02 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -216,6 +222,7 @@
 		};
 		F4BBC26C291A3D2500851A1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA54934291A42D400BF5E02 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -270,25 +277,28 @@
 		};
 		F4BBC26E291A3D2500851A1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA54934291A42D400BF5E02 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "here-draw/Support/here-draw.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZC7N435367;
+				DEVELOPMENT_TEAM = 3AQ2WDVH35;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "here-draw/Info.plist";
+				INFOPLIST_FILE = "here-draw/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cmccx.here-draw";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmccx.heredraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -298,25 +308,28 @@
 		};
 		F4BBC26F291A3D2500851A1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA54934291A42D400BF5E02 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "here-draw/Support/here-draw.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZC7N435367;
+				DEVELOPMENT_TEAM = 3AQ2WDVH35;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "here-draw/Info.plist";
+				INFOPLIST_FILE = "here-draw/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cmccx.here-draw";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmccx.heredraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
