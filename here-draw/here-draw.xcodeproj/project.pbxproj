@@ -366,7 +366,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PODS_ROOT = "/Users/swj/Documents/GitHub/here-draw-ios/here-draw/Podfile \n";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmccx.heredraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -398,7 +397,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PODS_ROOT = "/Users/swj/Documents/GitHub/here-draw-ios/here-draw/Podfile \n";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmccx.heredraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
