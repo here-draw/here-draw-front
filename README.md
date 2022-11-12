@@ -1,5 +1,5 @@
 # here-draw-ios
-
+## 레포지토리 이사했습니다. [👉 링크](https://github.com/here-draw/here-draw-kizi-cono)
 ## Commit Type
 `Feat` : 새로운 기능 추가 (new feature) → 기능 작업 (로직, 네트워크 통신 등등)
 
